@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <people>
-    <person id="0001">
+    <person id="1">
         <firstname>George R. R.</firstname>
         <lastname>Martin</lastname>
         <birthdate>1984-09-20T18:00:00.000+02:00</birthdate>
@@ -11,7 +11,7 @@
             <bmi>28.39</bmi>
         </healthprofile>
     </person>
-    <person id="0002">
+    <person id="2">
         <firstname>Virag</firstname>
         <lastname>Harangozo</lastname>
         <birthdate>1991-09-23T18:00:00.000+02:00</birthdate>
@@ -22,7 +22,7 @@
             <bmi>22.49</bmi>
         </healthprofile>
     </person>
-    <person id="0003">
+    <person id="5">
         <firstname>Adam</firstname>
         <lastname>Toth</lastname>
         <birthdate>1991-04-12T18:00:00.000+03:00</birthdate>
@@ -33,7 +33,7 @@
             <bmi>23.14</bmi>
         </healthprofile>
     </person>
-        <person id="0004">
+        <person id="4">
         <firstname>Agnes</firstname>
         <lastname>Simon</lastname>
         <birthdate>1990-06-07T18:00:00.000+02:00</birthdate>
@@ -44,7 +44,7 @@
             <bmi>20.83</bmi>
         </healthprofile>
     </person>
-        <person id="0005">
+        <person id="3">
         <firstname>Flora</firstname>
         <lastname>Piszker</lastname>
         <birthdate>1992-10-23T18:00:00.000+02:00</birthdate>
@@ -55,7 +55,7 @@
             <bmi>22.49</bmi>
         </healthprofile>
     </person>
-        <person id="0006">
+        <person id="6">
         <firstname>Anna</firstname>
         <lastname>Csrepes</lastname>
         <birthdate>1989-07-01T18:00:00.000+02:00</birthdate>
@@ -66,7 +66,7 @@
             <bmi>24.69</bmi>
         </healthprofile>
     </person>
-        <person id="0007">
+        <person id="7">
         <firstname>Krisztian</firstname>
         <lastname>Szabo</lastname>
         <birthdate>1993-02-18T18:00:00.000+02:00</birthdate>
@@ -77,7 +77,7 @@
             <bmi>29.41</bmi>
         </healthprofile>
     </person>
-        <person id="0008">
+        <person id="8">
         <firstname>Flavian</firstname>
         <lastname>Mintal</lastname>
         <birthdate>1990-09-12T18:00:00.000+02:00</birthdate>
@@ -88,7 +88,7 @@
             <bmi>31.14</bmi>
         </healthprofile>
     </person>
-        <person id="0009">
+        <person id="9">
         <firstname>Zoltan</firstname>
         <lastname>Kis</lastname>
         <birthdate>1991-09-23T18:00:00.000+02:00</birthdate>
@@ -99,7 +99,7 @@
             <bmi>22.49</bmi>
         </healthprofile>
     </person>
-        <person id="0010">
+        <person id="10">
         <firstname>Elemer</firstname>
         <lastname>Nagy</lastname>
         <birthdate>1988-10-10T18:00:00.000+02:00</birthdate>
@@ -110,7 +110,7 @@
             <bmi>22.16</bmi>
         </healthprofile>
     </person>
-        <person id="0011">
+        <person id="11">
         <firstname>Elek</firstname>
         <lastname>Mek</lastname>
         <birthdate>1994-03-20T18:00:00.000+02:00</birthdate>
@@ -121,7 +121,7 @@
             <bmi>22.49</bmi>
         </healthprofile>
     </person>
-        <person id="0012">
+        <person id="12">
         <firstname>Denes</firstname>
         <lastname>Sipos</lastname>
         <birthdate>1992-01-20T18:00:00.000+02:00</birthdate>
@@ -132,7 +132,7 @@
             <bmi>26.31</bmi>
         </healthprofile>
     </person>
-        <person id="0013">
+        <person id="13">
         <firstname>Miklos</firstname>
         <lastname>Farkas</lastname>
         <birthdate>1991-09-23T18:00:00.000+02:00</birthdate>
@@ -143,7 +143,7 @@
             <bmi>22.49</bmi>
         </healthprofile>
     </person>
-        <person id="0014">
+        <person id="14">
         <firstname>Matyas</firstname>
         <lastname>Kiraly</lastname>
         <birthdate>1989-12-23T18:00:00.000+02:00</birthdate>
@@ -154,7 +154,7 @@
             <bmi>25.30</bmi>
         </healthprofile>
     </person>
-        <person id="0015">
+        <person id="15">
         <firstname>Janos</firstname>
         <lastname>Bacsi</lastname>
         <birthdate>1991-05-22T18:00:00.000+02:00</birthdate>
@@ -165,7 +165,7 @@
             <bmi>31.02</bmi>
         </healthprofile>
     </person>
-        <person id="0016">
+        <person id="16">
         <firstname>Emese</firstname>
         <lastname>Kerepes</lastname>
         <birthdate>1991-11-11T18:00:00.000+02:00</birthdate>
@@ -176,7 +176,7 @@
             <bmi>18.99</bmi>
         </healthprofile>
     </person>
-        <person id="0017">
+        <person id="17">
         <firstname>Janko</firstname>
         <lastname>Miko</lastname>
         <birthdate>1991-06-15T18:00:00.000+02:00</birthdate>
@@ -187,7 +187,7 @@
             <bmi>18.01</bmi>
         </healthprofile>
     </person>
-        <person id="0018">
+        <person id="18">
         <firstname>Erika</firstname>
         <lastname>Miklosa</lastname>
         <birthdate>1992-04-23T18:00:00.000+02:00</birthdate>
@@ -198,7 +198,7 @@
             <bmi>25.95</bmi>
         </healthprofile>
     </person>
-        <person id="0019">
+        <person id="19">
         <firstname>Zoltan</firstname>
         <lastname>Foldi</lastname>
         <birthdate>1991-08-13T18:00:00.000+02:00</birthdate>
@@ -209,7 +209,7 @@
             <bmi>21.931</bmi>
         </healthprofile>
     </person>
-        <person id="0020">
+        <person id="20">
         <firstname>Nikolett</firstname>
         <lastname>Utolso</lastname>
         <birthdate>1991-10-12T18:00:00.000+02:00</birthdate>
