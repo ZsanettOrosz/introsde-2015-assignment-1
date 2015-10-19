@@ -1,0 +1,36 @@
+{
+  "person" : [ {
+    "firstname" : "George R. R.",
+    "lastname" : "Martin",
+    "birthdate" : "1984-09-20T18:00:00.000+02:00",
+    "healthprofile" : {
+      "lastupdate" : "Mon Oct 19 21:30:12 CEST 2015",
+      "weight" : 90.0,
+      "height" : 1.8,
+      "bmi" : 27.777777777777775
+    },
+    "id" : 1
+  }, {
+    "firstname" : "Virág",
+    "lastname" : "Harangozó",
+    "birthdate" : "1991-09-23T18:00:00.000+02:00",
+    "healthprofile" : {
+      "lastupdate" : "Mon Oct 19 21:30:12 CEST 2015",
+      "weight" : 65.0,
+      "height" : 1.7,
+      "bmi" : 22.49134948096886
+    },
+    "id" : 2
+  }, {
+    "firstname" : "Adam",
+    "lastname" : "Toth",
+    "birthdate" : "1991-04-12T18:00:00.000+03:00",
+    "healthprofile" : {
+      "lastupdate" : "Mon Oct 19 21:30:12 CEST 2015",
+      "weight" : 75.0,
+      "height" : 1.8,
+      "bmi" : 23.148148148148145
+    },
+    "id" : 5
+  } ]
+}

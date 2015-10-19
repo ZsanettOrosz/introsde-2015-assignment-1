@@ -1,0 +1,24 @@
+     [java] 
+     [java] Output from our XML File: 
+     [java] Person: George R. R. Martin
+     [java] born 1984-09-20T18:00:00.000+02:00
+     [java] Health Profile: 
+     [java] 	Last updateMon Oct 19 21:30:11 CEST 2015
+     [java] 	weight: 92.0
+     [java] 	height: 1.8
+     [java] 	BMI: Mon Oct 19 21:30:11 CEST 2015
+     [java] Person: Virág Harangozó
+     [java] born 1991-09-23T18:00:00.000+02:00
+     [java] Health Profile: 
+     [java] 	Last updateMon Oct 19 21:30:11 CEST 2015
+     [java] 	weight: 65.0
+     [java] 	height: 1.7
+     [java] 	BMI: Mon Oct 19 21:30:11 CEST 2015
+     [java] Person: Adam Toth
+     [java] born 1991-04-12T18:00:00.000+03:00
+     [java] Health Profile: 
+     [java] 	Last updateMon Oct 19 21:30:11 CEST 2015
+     [java] 	weight: 75.0
+     [java] 	height: 1.8
+     [java] 	BMI: Mon Oct 19 21:30:11 CEST 2015
+     [java] 

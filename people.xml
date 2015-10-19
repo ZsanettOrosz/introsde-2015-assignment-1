@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<people>
+    <person id="1">
+        <firstname>George R. R.</firstname>
+        <lastname>Martin</lastname>
+        <birthdate>1984-09-20T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Mon Oct 19 21:30:11 CEST 2015</lastupdate>
+            <weight>92.0</weight>
+            <height>1.8</height>
+            <bmi>28.39506172839506</bmi>
+        </healthprofile>
+    </person>
+    <person id="2">
+        <firstname>Virág</firstname>
+        <lastname>Harangozó</lastname>
+        <birthdate>1991-09-23T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Mon Oct 19 21:30:11 CEST 2015</lastupdate>
+            <weight>65.0</weight>
+            <height>1.7</height>
+            <bmi>22.49134948096886</bmi>
+        </healthprofile>
+    </person>
+    <person id="5">
+        <firstname>Adam</firstname>
+        <lastname>Toth</lastname>
+        <birthdate>1991-04-12T18:00:00.000+03:00</birthdate>
+        <healthprofile>
+            <lastupdate>Mon Oct 19 21:30:11 CEST 2015</lastupdate>
+            <weight>75.0</weight>
+            <height>1.8</height>
+            <bmi>23.148148148148145</bmi>
+        </healthprofile>
+    </person>
+</people>

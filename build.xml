@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="AssigmentJAXB" default="compile" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<!-- Ivy properties, download, installation and configuration -->
+	<property name="ivy.install.version" value="2.4.0-rc1" />
+	<property name="ivy.jar.dir" value="${basedir}/ivy" />
+	<property name="ivy.jar.file" value="${ivy.jar.dir}/ivy.jar" />
+
+	<!-- this target will donwload ivy.jar if its inot in the "ivy" folder yet -->
+	<target name="download-ivy" unless="skip.download">
+		<mkdir dir="${ivy.jar.dir}"/>
+		<!-- download Ivy from web site so that it can be used even without any special installation -->
+		<echo message="installing ivy..."/>
+		<get src="http://repo1.maven.org/maven2/org/apache/ivy/ivy/${ivy.install.version}/ivy-${ivy.install.version}.jar" dest="${ivy.jar.file}" usetimestamp="true"/>
+	</target>
+	<!--To install ivy -->
+	<target name="install-ivy" depends="download-ivy" description="--> install ivy">
+		<path id="ivy.lib.path">
+			<fileset dir="${ivy.jar.dir}" includes="*.jar"/>
+		</path>
+		<taskdef resource="org/apache/ivy/ant/antlib.xml" uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
+	</target>
+
+	<!-- General properties definitions -->
+	<property name="build.dir" value="build" />
+	<property name="src.dir" value="src" />
+	<property name="lib.dir" value="lib" />
+	<property name="xjc.package" value="healtprofile.generated" />
+
+	<!-- target: resolve:downloads the dependencies to  lib folder -->
+	<target name="resolve" depends="install-ivy" description="--> retrieve dependencies with ivy">
+		<ivy:retrieve pattern="${lib.dir}/[artifact]-[type]-[revision].[ext]"/>
+	</target>
+
+	<!-- paths where ivy libraries will be downloaded, use them as classpathref in your compilation and running tasks  -->
+	<path id="lib.path.id">
+		<fileset dir="${lib.dir}" />
+	</path>
+
+
+	<path id="run.path.id">
+		<path refid="lib.path.id" />
+		<fileset dir="${build.dir}">
+			<include name="*.class" />
+			<include name="**/*.class" />
+			<exclude name="**/*Test*" />
+		</fileset>
+	</path>
+
+	<!-- Compilation targets -->
+	
+	<!--init: initialises the properties -->
+	<target name="init" depends="install-ivy, resolve">
+		<echo message="Init has been called" />
+		<mkdir dir="${build.dir}" />
+		<echo message="${build.dir} has been created" />
+		<mkdir dir="${lib.dir}" />
+		<echo message="${lib.dir} has been created" />
+	</target>
+
+	<!--generates classes for the JAXB compiler -->
+	<target name="generate" depends="init">
+		<taskdef name="xjc" classname="com.sun.tools.xjc.XJCTask" classpathref="lib.path.id">
+		</taskdef>
+		<xjc schema="peopleSchema.xsd" destdir="${src.dir}" package="${xjc.package}" />
+	</target>
+	
+	<!--compiling all the source files -->
+	<target name="compile" depends="init, generate">
+		<echo message="Compile target has been called" />
+		<javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="lib.path.id" includeAntRuntime="false">
+		</javac>
+		<copy todir="${build.dir}" overwrite="true">
+			<fileset dir="${src.dir}">
+				<include name="*.xml" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<!-- Execution targets -->
+	<!--Before each execution target I assume that the compile target had been called previously -->
+	
+	<!--executing a search on people with id 5 -->
+	<target name="execute.WithID">
+		<echo message="execute.WithID target has been called" />
+	    <java classname="HealtProfileXpath" classpath="build">
+	        	<arg value='5'/>
+	    </java>
+	</target>
+	
+	<!-- executing a search on people with weight=90 an an operator: >. (possible operators: <,>,=) -->
+	<target name="execute.Weight" >
+			<echo message="execute.Weight target has been called" />
+		    <java classname="HealtProfileXpath" classpath="build">
+		        	<arg value="90"/>
+		    		<arg value=">"/>
+		    </java>
+		</target>
+	
+	
+
+	<!--executing the marshalling of people to people.xml file -->
+	<target name="execute.HPWriter">
+		<echo message="Executing Health Profile Writer: will produce a people.xml in home folder" />
+		<java classname="HealthProfileWriter" classpath="${build.dir}">
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="**/*.jar" />
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>
+	
+	<!--executing the unmarhalling of people -->
+	<target name="execute.HPReader">
+		<echo message="Executing Health Profile Reader: will read the people.xml in home folder and print one at a time" />
+		<record name="peopleUnmarshalled.xml" action="start"/>
+		<java classname="HealthProfileReader" classpath="${build.dir}">
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="**/*.jar" />
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	    <record name="peopleUnmarshalled.xml" action="stop"/>
+	</target>
+	
+	<!--executing the marshalling to JSON -->
+	<target name="execute.HPJson">
+		<echo message="Executing Health Profile Writer for Json" />
+		<java classname="HealthProfileJson" classpath="${build.dir}">
+			<classpath>
+				<fileset dir="${lib.dir}">
+					<include name="**/*.jar" />
+					<include name="*.jar" />
+				</fileset>
+			</classpath>
+		</java>
+	</target>
+	
+    <!--executing the evaluation in the order of the tasks were declared-->
+	<!--starts from compiling -->
+	<target name="execute.evaluation" depends="compile, execute.WithID, execute.Weight, execute.HPReader,execute.HPWriter, execute.HPJson">
+		<echo message="Evaluation has been executed" />
+	</target>
+	
+	<!--to remove all changes -->
+	<target name="cleanBuild">
+		<echo message="Clean build has been called" />
+		<delete dir="${build.dir}" />
+		<echo message="${build.dir} has been deleted" />
+		<delete dir="${basedir}/ivy" />
+		<echo message="${basedir}/ivy has been deleted" />
+		
+	</target>
+	
+	
+	
+</project>
