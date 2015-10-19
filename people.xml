@@ -1,36 +1,223 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <people>
-    <person id="1">
+    <person id="0001">
         <firstname>George R. R.</firstname>
         <lastname>Martin</lastname>
         <birthdate>1984-09-20T18:00:00.000+02:00</birthdate>
         <healthprofile>
-            <lastupdate>Mon Oct 19 21:30:11 CEST 2015</lastupdate>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
             <weight>92.0</weight>
             <height>1.8</height>
-            <bmi>28.39506172839506</bmi>
+            <bmi>28.39</bmi>
         </healthprofile>
     </person>
-    <person id="2">
-        <firstname>Virág</firstname>
-        <lastname>Harangozó</lastname>
+    <person id="0002">
+        <firstname>Virag</firstname>
+        <lastname>Harangozo</lastname>
         <birthdate>1991-09-23T18:00:00.000+02:00</birthdate>
         <healthprofile>
-            <lastupdate>Mon Oct 19 21:30:11 CEST 2015</lastupdate>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
             <weight>65.0</weight>
             <height>1.7</height>
-            <bmi>22.49134948096886</bmi>
+            <bmi>22.49</bmi>
         </healthprofile>
     </person>
-    <person id="5">
+    <person id="0003">
         <firstname>Adam</firstname>
         <lastname>Toth</lastname>
         <birthdate>1991-04-12T18:00:00.000+03:00</birthdate>
         <healthprofile>
-            <lastupdate>Mon Oct 19 21:30:11 CEST 2015</lastupdate>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
             <weight>75.0</weight>
             <height>1.8</height>
-            <bmi>23.148148148148145</bmi>
+            <bmi>23.14</bmi>
+        </healthprofile>
+    </person>
+        <person id="0004">
+        <firstname>Agnes</firstname>
+        <lastname>Simon</lastname>
+        <birthdate>1990-06-07T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>75.0</weight>
+            <height>1.8</height>
+            <bmi>20.83</bmi>
+        </healthprofile>
+    </person>
+        <person id="0005">
+        <firstname>Flora</firstname>
+        <lastname>Piszker</lastname>
+        <birthdate>1992-10-23T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>65.0</weight>
+            <height>1.7</height>
+            <bmi>22.49</bmi>
+        </healthprofile>
+    </person>
+        <person id="0006">
+        <firstname>Anna</firstname>
+        <lastname>Csrepes</lastname>
+        <birthdate>1989-07-01T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>80.0</weight>
+            <height>1.8</height>
+            <bmi>24.69</bmi>
+        </healthprofile>
+    </person>
+        <person id="0007">
+        <firstname>Krisztian</firstname>
+        <lastname>Szabo</lastname>
+        <birthdate>1993-02-18T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>85.0</weight>
+            <height>1.7</height>
+            <bmi>29.41</bmi>
+        </healthprofile>
+    </person>
+        <person id="0008">
+        <firstname>Flavian</firstname>
+        <lastname>Mintal</lastname>
+        <birthdate>1990-09-12T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>90.0</weight>
+            <height>1.7</height>
+            <bmi>31.14</bmi>
+        </healthprofile>
+    </person>
+        <person id="0009">
+        <firstname>Zoltan</firstname>
+        <lastname>Kis</lastname>
+        <birthdate>1991-09-23T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>65.0</weight>
+            <height>1.7</height>
+            <bmi>22.49</bmi>
+        </healthprofile>
+    </person>
+        <person id="0010">
+        <firstname>Elemer</firstname>
+        <lastname>Nagy</lastname>
+        <birthdate>1988-10-10T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>80.0</weight>
+            <height>1.9</height>
+            <bmi>22.16</bmi>
+        </healthprofile>
+    </person>
+        <person id="0011">
+        <firstname>Elek</firstname>
+        <lastname>Mek</lastname>
+        <birthdate>1994-03-20T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>65.0</weight>
+            <height>1.7</height>
+            <bmi>22.49</bmi>
+        </healthprofile>
+    </person>
+        <person id="0012">
+        <firstname>Denes</firstname>
+        <lastname>Sipos</lastname>
+        <birthdate>1992-01-20T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>95.0</weight>
+            <height>1.9</height>
+            <bmi>26.31</bmi>
+        </healthprofile>
+    </person>
+        <person id="0013">
+        <firstname>Miklos</firstname>
+        <lastname>Farkas</lastname>
+        <birthdate>1991-09-23T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>65.0</weight>
+            <height>1.7</height>
+            <bmi>22.49</bmi>
+        </healthprofile>
+    </person>
+        <person id="0014">
+        <firstname>Matyas</firstname>
+        <lastname>Kiraly</lastname>
+        <birthdate>1989-12-23T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>82.0</weight>
+            <height>1.8</height>
+            <bmi>25.30</bmi>
+        </healthprofile>
+    </person>
+        <person id="0015">
+        <firstname>Janos</firstname>
+        <lastname>Bacsi</lastname>
+        <birthdate>1991-05-22T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>95.0</weight>
+            <height>1.75</height>
+            <bmi>31.02</bmi>
+        </healthprofile>
+    </person>
+        <person id="0016">
+        <firstname>Emese</firstname>
+        <lastname>Kerepes</lastname>
+        <birthdate>1991-11-11T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>65.0</weight>
+            <height>1.85</height>
+            <bmi>18.99</bmi>
+        </healthprofile>
+    </person>
+        <person id="0017">
+        <firstname>Janko</firstname>
+        <lastname>Miko</lastname>
+        <birthdate>1991-06-15T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>65.0</weight>
+            <height>1.9</height>
+            <bmi>18.01</bmi>
+        </healthprofile>
+    </person>
+        <person id="0018">
+        <firstname>Erika</firstname>
+        <lastname>Miklosa</lastname>
+        <birthdate>1992-04-23T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>75.0</weight>
+            <height>1.7</height>
+            <bmi>25.95</bmi>
+        </healthprofile>
+    </person>
+        <person id="0019">
+        <firstname>Zoltan</firstname>
+        <lastname>Foldi</lastname>
+        <birthdate>1991-08-13T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>75.0</weight>
+            <height>1.85</height>
+            <bmi>21.931</bmi>
+        </healthprofile>
+    </person>
+        <person id="0020">
+        <firstname>Nikolett</firstname>
+        <lastname>Utolso</lastname>
+        <birthdate>1991-10-12T18:00:00.000+02:00</birthdate>
+        <healthprofile>
+            <lastupdate>Sun Oct 18 22:28:59 CEST 2015</lastupdate>
+            <weight>65.0</weight>
+            <height>1.7</height>
+            <bmi>22.49</bmi>
         </healthprofile>
     </person>
 </people>
