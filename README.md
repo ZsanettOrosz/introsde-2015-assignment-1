@@ -10,6 +10,8 @@ Also there are additional classes like Person, HealthProfile and PeopleStore.
 The Person represents one person, each Person has a HealthProfile and the persons are stored in the PeopleStore class. 
 To the whole project there is a corresponding build.xml and ivy.xml file. The ivy.xml file manages the dependencies of the projects and build.xml manages the compilation and execution of each task. 
 
+All the java classes are in the scr folder. The PeopleStore is in the package dao, the HealtProfile and Person classes are in the package model.
+
 
 #Tasks the code does
 
